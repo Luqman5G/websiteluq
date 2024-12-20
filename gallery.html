@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f4f4f9, #c9d6ff);
+            background-image: url('images/back2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background: #040910;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ff5733;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            position: relative;
+            padding: 10px 15px;
+            display: inline-block;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: #ff5733;
+            color: #fff;
+            border-color: #fff;
+            transform: scale(1.1);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #ff5733;
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 5px solid #ff5733;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: #4a90e2;
+        }
+
+        footer {
+            text-align: center;
+            background: #000000;
+            color: #ffffff;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        .video-section video {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .audio-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        audio {
+            width: 80%;  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Gallery</h1>
+        <p>Gallery</p>
+    </header>
+    
+    <nav>
+        <a href="HOME.html" target="_blank">Home</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="experience.html" target="_blank">Experience</a>
+        <a href="skills.html" target="_blank">Skills</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="family.html" target="_blank">Family</a>
+        <a href="contact.html" target="_blank">Contact</a>
+    </nav>
+
+    <section id="gallery">
+        <h2>My Gallery</h2>
+        <div class="gallery">
+            <img src="images/b1.jpg" alt="Gallery Image 1">
+            <img src="images/b2.jpg" alt="Gallery Image 2">
+            <img src="images/b3.jpg" alt="Gallery Image 3">
+            <img src="images/b4.jpg" alt="Gallery Image 4">
+            <img src="images/b5.jpg" alt="Gallery Image 5">
+            <img src="images/b6.jpg" alt="Gallery Image 6">
+            <img src="images/b7.jpg" alt="Gallery Image 7">
+            <img src="images/b8.jpg" alt="Gallery Image 8">
+            <img src="images/b9.jpg" alt="Gallery Image 9">
+            <img src="images/b10.jpg" alt="Gallery Image 10">
+            <img src="images/b11.jpg" alt="Gallery Image 11">
+            <img src="images/b12.jpg" alt="Gallery Image 12">
+        </div>
+    </section>
+
+    <section class="video-section">
+        <h2>My Video</h2>
+        <video controls autoplay loop>
+            <source src="video/v1.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Centered audio element with autoplay -->
+    <div class="audio-container">
+        <audio controls autoplay loop>
+            <source src="sound/music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Luqman Nur Haiqal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

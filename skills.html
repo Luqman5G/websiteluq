@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f4f4f9, #c9d6ff);
+            background-image: url('images/back2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #040910;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.6); 
+            padding: 15px 0;
+            border-radius: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            border: 2px solid #ff5733; 
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            position: relative;
+            padding: 10px 15px;
+            display: inline-block;
+            border: 2px solid transparent; 
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: #ff5733; 
+            color: #fff;
+            border-color: #fff; 
+            transform: scale(1.1); 
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #ff5733;
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav a:hover::after {
+            width: 100%; 
+        }
+
+        .experience {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .experience h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .skills h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background: #f4f4f9;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .skills li span {
+            margin-left: auto;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+
+
+        footer {
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Skill</h1>
+        <p>This is my skills</p>
+    </header>
+
+    <nav>
+        <a href="HOME.html" target="_blank">Home</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="experience.html" target="_blank">Experience</a>
+        <a href="skills.html" target="_blank">Skills</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="family.html" target="_blank">Family</a>
+        <a href="contact.html" target="_blank">Contact</a>
+    </nav>
+    </nav>
+
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS <span>Advanced</span></li>
+            <li>DESIGNER <span>Intermediate</span></li>
+            <li>MICROSOFT POWERPOINT <span>Intermediate</span></li>
+            <li>CANVA <span>Intermediate</span></li>
+            <li>Problem-Solving <span>Advanced</span></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luqman Nur Haiqal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

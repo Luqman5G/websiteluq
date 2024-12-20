@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif; 
+            background: linear-gradient(135deg, #f4f4f9, #c9d6ff);
+            background-image: url('images/back2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #000000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px 0;
+            border-radius: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            border: 2px solid #ff5733;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            position: relative;
+            padding: 10px 15px;
+            display: inline-block;
+            border: 2px solid transparent; 
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: #ff5733;
+            color: #fff;
+            border-color: #fff; 
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px; 
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #ff5733;
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav a:hover::after {
+            width: 100%; 
+        }
+
+        .experience {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .experience h2 {
+            text-align: center;
+            font-size: 2em;
+            color: #4a90e2;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4a90e2;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            text-align: center;
+            background: #000203;
+            color: #ffffff;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Experience</h1>
+        <p>Highlights of my professional and personal journey</p>
+    </header>
+
+    <nav>
+        <a href="HOME.html" target="_blank">Home</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="experience.html" target="_blank">Experience</a>
+        <a href="skills.html" target="_blank">Skills</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="family.html" target="_blank">Family</a>
+        <a href="contact.html" target="_blank">Contact</a>
+    </nav>
+
+    <section class="experience" id="experience">
+        <h2>Work and Personal Experiences</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Position</th>
+                    <th>Duration</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Internship at Sultanah Nur Zahirah Library</td>
+                    <td>July 2024 - August 2024</td>
+                    <td>carrying out tasks such as maintaining the main counter and facilities and managing the library</td>
+                </tr>
+                <tr>
+                    <td>Maahad Tahfiz Wal Tarbiryah Darul Iman</td>
+                    <td>January 2011 - February 2021</td>
+                    <td>I used to be an assistant headmaster at a secondary school.</td>
+                </tr>
+                <tr>
+                    <td>Freelancer Managing Tuition</td>
+                    <td>Ongoing</td>
+                    <td>I used to manage a tuition center in managing counters and documents</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luqman Nur Haiqal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

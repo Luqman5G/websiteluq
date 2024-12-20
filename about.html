@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f4f4f9, #c9d6ff);
+            background-image: url('images/back2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #040910;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ff5733;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            position: relative;
+            padding: 10px 15px;
+            display: inline-block;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: #ff5733;
+            color: #fff;
+            border-color: #fff;
+            transform: scale(1.1);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #ff5733;
+            transition: width 0.3s ease-in-out;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+        section img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 3px solid #4a90e2;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+        section p {
+            text-align: center;
+            font-size: 1.1em;
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LUQMAN NUR HAIQAL</h1>
+        <p>MY PROFILE</p>
+    </header>
+    
+    <nav>
+        <a href="HOME.html" target="_blank">Home</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="experience.html" target="_blank">Experience</a>
+        <a href="skills.html" target="_blank">Skills</a>
+        <a href="education.html" target="_blank">Education</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="family.html" target="_blank">Family</a>
+        <a href="contact.html" target="_blank">Contact</a>
+    </nav>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/luq2.jpg" alt="Profile Picture">
+        <p>
+            Assalamualaikum. My name is <strong>Luqman Nur Haiqal</strong>. I am a student at Universiti Teknologi Mara (UiTM) Machang. 
+            I am very passionate about learning the growth of information management technology. I am 20 years old and currently live in 
+            Teluk Ketapang, Kuala Nerus, Terengganu. I strive to excel both academically and personally. My interests include technology, 
+            science, and creative problem-solving to achieve my future goals. I am highly motivated to make a positive impact in my chosen field 
+            and actively seek opportunities to gain more knowledge and experience.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Luqman Nur Haiqal. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
